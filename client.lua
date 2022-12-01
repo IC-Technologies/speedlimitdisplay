@@ -10,9 +10,11 @@ end)
 Citizen.CreateThread(function()
     while true do
         Wait(0)
-    	if IsPedInAnyVehicle(PlayerPedId()) then
+    	if IsPedInAnyVehicle(PlayerPedId()) and (not exports.Badssentials:IsDisplaysHidden()) then
 			if showlimit == true then
-    	    	DrawTxt(1.160, 0.500, 1.0,1.0,0.55,"~p~Speedlimit: ~w~"..GetSpeedLimit().."~p~ mph", 255,255,255,255)
+				local display = Config.DisplaySettings.text
+				display = display:gsub("{LIMIT}", GetSpeedLimit())
+    	    	DrawTxt(Config.DisplaySettings.x, Config.DisplaySettings.y, Config.DisplaySettings.width, Config.DisplaySettings.height, Config.DisplaySettings.scale, display, 255, 255, 255, 255)
 			end
 		end
     end
@@ -31,7 +33,7 @@ function GetSpeedLimit()
 end
 
 --Draws text to the screen
-function DrawTxt(x,y ,width,height,scale, text, r,g,b,a)
+function DrawTxt(x, y, width, height, scale, text, r, g, b, a)
     SetTextFont(6)
     SetTextProportional(0)
     SetTextScale(scale, scale)

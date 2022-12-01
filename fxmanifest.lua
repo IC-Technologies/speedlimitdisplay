@@ -8,7 +8,7 @@ url 'https://github.com/chickenlord01/johnsspeedlimitdisplay'
 author 'JohnL#6869'
 
 shared_scripts {
-	'config/config.lua'
+	'config.lua'
 }
 
 client_scripts {
