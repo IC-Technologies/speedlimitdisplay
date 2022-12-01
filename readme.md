@@ -20,11 +20,9 @@
 
 <h4>Known Contributors</h4>
 <ul>
-Big-Yoda
-JohnL#6869 (Discord)
-<a href="https://github.com/chickenlord01">chickenlord01</a>
-<a href="https://github.com/NickReagan">NickReagan</a>
+  <li>Big-Yoda (<a href="https://forum.cfx.re/t/release-posted-speedlimit/180949">Original Author</a>)</li>
+  <li>JohnL#6869 (Discord)</li>
+  <li><a href="https://github.com/chickenlord01">chickenlord01</a></li>
+  <li><a href="https://github.com/NickReagan">NickReagan</a></li>
 </ul>
-  <li>Thanks to Big-Yoda for the original script: <a href="https://forum.cfx.re/t/release-posted-speedlimit/180949">Link</a></li>
-  <li>If any bug/issue is found please submit it on the github page.</li>
-</ul>
+If any bug/issue is found please submit it on the github page.</li>
