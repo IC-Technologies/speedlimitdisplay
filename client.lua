@@ -10,11 +10,21 @@ end)
 Citizen.CreateThread(function()
     while true do
         Wait(0)
-    	if IsPedInAnyVehicle(PlayerPedId()) and (not exports.Badssentials:IsDisplaysHidden()) then
-			if showlimit == true then
-				local display = Config.DisplaySettings.text
-				display = display:gsub("{LIMIT}", GetSpeedLimit())
-    	    	DrawTxt(Config.DisplaySettings.x, Config.DisplaySettings.y, Config.DisplaySettings.width, Config.DisplaySettings.height, Config.DisplaySettings.scale, display, 255, 255, 255, 255)
+		if Config.enableBadssentialsIntegration then
+			if IsPedInAnyVehicle(PlayerPedId()) and (not exports.Badssentials:IsDisplaysHidden()) then
+				if showlimit == true then
+					local display = Config.DisplaySettings.text
+					display = display:gsub("{LIMIT}", GetSpeedLimit())
+					DrawTxt(Config.DisplaySettings.x, Config.DisplaySettings.y, Config.DisplaySettings.width, Config.DisplaySettings.height, Config.DisplaySettings.scale, display, 255, 255, 255, 255)
+				end
+			end
+		else
+			if IsPedInAnyVehicle(PlayerPedId()) then
+				if showlimit == true then
+					local display = Config.DisplaySettings.text
+					display = display:gsub("{LIMIT}", GetSpeedLimit())
+					DrawTxt(Config.DisplaySettings.x, Config.DisplaySettings.y, Config.DisplaySettings.width, Config.DisplaySettings.height, Config.DisplaySettings.scale, display, 255, 255, 255, 255)
+				end
 			end
 		end
     end

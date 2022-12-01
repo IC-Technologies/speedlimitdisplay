@@ -14,3 +14,5 @@ shared_scripts {
 client_scripts {
 	'client.lua'
 }
+
+server_script 'configcheck.lua'

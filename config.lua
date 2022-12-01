@@ -1,4 +1,6 @@
 Config = {
+	enableBadssentialsIntegration = true,
+
 	DisplaySettings = {
 		text = " ~w~| ~b~Speedlimit: ~w~{LIMIT} ~b~MPH", --The text that is displayed on the screen. Use "{LIMIT}" to show the limit speed.
 		x = .845,
