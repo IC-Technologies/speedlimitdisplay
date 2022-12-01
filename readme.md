@@ -25,4 +25,5 @@
   <li><a href="https://github.com/chickenlord01">chickenlord01</a></li>
   <li><a href="https://github.com/NickReagan">NickReagan</a></li>
 </ul>
+
 If any bug/issue is found please submit it on the github page.</li>
