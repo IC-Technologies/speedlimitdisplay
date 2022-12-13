@@ -1,8 +1,17 @@
 Config = {
-	enableBadssentialsIntegration = true,
+	enableBadssentialsIntegration = true, --Whether or not to check and see if the client's Badssentials hud is toggled. (Must have Badssentials installed for this feature.)
 
 	DisplaySettings = {
-		text = " ~w~| ~b~Speedlimit: ~w~{LIMIT} ~b~MPH", --The text that is displayed on the screen. Use "{LIMIT}" to show the limit speed.
+		--Use MPH or KPH
+		speedType = "MPH",
+		ColorOptions = {
+			enableColorChange = true, --Whether or not the limit text changes based of off speed.
+			color1 = "~y~",
+			color1Speed = 1, --How many "miles" OVER the limit until it changes the speed limit color to color 1.
+			color2 = "~r~",
+			color2Speed = 10,--How many "miles" OVER the limit until it changes the speed limit color to color 2.
+		},
+		text = " ~w~| ~b~Speedlimit: ~w~{LIMIT} ~b~{SPEED_TYPE}", --The text that is displayed on the screen. Use "{LIMIT}" to show the limit speed. Use "{SPEED_TYPE}" to display the speed type. (MPH/KPH)
 		x = .845,
 		y = 1.455,
 		width = 1.0,
@@ -16,7 +25,7 @@ Config = {
 		["Marina Dr"] = 35,
 		["Alhambra Dr"] = 35,
 		["Niland Ave"] = 35,
-		["Zancudo Ave"] = 35,
+		["Zancudo Ave"] = 35,	
 		["Armadillo Ave"] = 35,
 		["Algonquin Blvd"] = 35,
 		["Mountain View Dr"] = 35,
@@ -230,5 +239,6 @@ Config = {
 		["Lolita Ave"] = 35,
 		["Meringue Ln"] = 35,
 		["Strangeways Dr"] = 30,
+		["Tangerine St"] = 25,
 	},
 }
