@@ -13,7 +13,7 @@
 <ol>
   <li>Download speedlimitdisplay <a href="https://github.com/NickReagan/speedlimitdisplay">here</a>.</li>
   <li>Extract the folders and upload it to your FiveM server.</li>
-  <li>Add `start speedlimitdisplay` to your server.cfg file.</li>
+  <li>Add ```start speedlimitdisplay``` to your server.cfg file.</li>
 </ol>
 
 <h4>Credits</h4>
