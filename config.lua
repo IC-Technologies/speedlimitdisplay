@@ -1,5 +1,6 @@
 Config = {
-	enableBadssentialsIntegration = true, --Whether or not to check and see if the client's Badssentials hud is toggled. (Must have Badssentials installed for this feature.)
+	enableBadssentialsIntegration = true, --Whether or not to check and see if the client's Badssentials hud is toggled. (Must have Badssentials installed for this feature.) (Default: false)
+	showOnFoot = false, --Whether or not to show the limit while on foot. (Default: false)
 
 	DisplaySettings = {
 		--Use MPH or KPH

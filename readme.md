@@ -4,6 +4,7 @@
 
 <ul>
     <li>Displays speed limit on screen when inside a vehicle.</li>
+    <li>Ability to automatically change text depending on speed!</li>
     <li>More config options!</li>
     <li>This version of Big-Yoda's SpeedLimit-Display is more optimized. (less ms)</li>
 </ul>
