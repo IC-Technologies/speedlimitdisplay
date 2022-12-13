@@ -1,10 +1,9 @@
 Config = {
-	enableBadssentialsIntegration = true, --Whether or not to check and see if the client's Badssentials hud is toggled. (Must have Badssentials installed for this feature.) (Default: false)
+	enableBadssentialsIntegration = false, --Whether or not to check and see if the client's Badssentials hud is toggled. (Must have Badssentials installed for this feature.) (Default: false)
 	showOnFoot = false, --Whether or not to show the limit while on foot. (Default: false)
 
 	DisplaySettings = {
-		--Use MPH or KPH
-		speedType = "MPH",
+		speedType = "MPH", --Use MPH or KPH
 		ColorOptions = {
 			enableColorChange = true, --Whether or not the limit text changes based of off speed.
 			color1 = "~y~",
