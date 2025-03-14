@@ -3,6 +3,7 @@ Config = {
 	showOnFoot = false, --Whether or not to show the limit while on foot. (Default: false)
 
 	DisplaySettings = {
+		enableDisplay = true,
 		speedType = "MPH", --Use MPH or KPH
 		ColorOptions = {
 			enableColorChange = true, --Whether or not the limit text changes based of off speed.
@@ -17,6 +18,10 @@ Config = {
 		width = 1.0,
 		height = 1.0,
 		scale =  0.45,
+	},
+
+	VehicleBlacklist = { --Blacklist certain vehicles from having seatbelts. (Use Spawncodes)
+		"examplevehicle1"
 	},
 
 	Limits = {
@@ -240,5 +245,8 @@ Config = {
 		["Meringue Ln"] = 35,
 		["Strangeways Dr"] = 30,
 		["Tangerine St"] = 25,
+		["Peaceful St"] = 25,
+		["York St"] = 20,
+		["North Archer Ave"] = 25,
 	},
 }

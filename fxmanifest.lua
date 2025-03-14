@@ -16,3 +16,5 @@ client_scripts {
 }
 
 server_script 'configcheck.lua'
+
+export "GetSpeedDisplay"
